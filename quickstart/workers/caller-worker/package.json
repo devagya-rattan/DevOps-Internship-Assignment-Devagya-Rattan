@@ -1,0 +1,22 @@
+{
+  "name": "caller-worker",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Calls math::add in the Python worker and returns the result",
+  "scripts": {
+    "dev": "tsx watch src/worker.ts",
+    "build": "tsc",
+    "start": "ts-node src/worker.ts"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "iii-sdk": "0.11.0"
+  },
+  "devDependencies": {
+    "@types/node": "^25.9.1",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.0.0",
+    "typescript": "^5.9.3"
+  },
+  "license": "Apache-2.0"
+}
