@@ -18,15 +18,6 @@ Detailed deployment notes, troubleshooting steps, and engineering reasoning are 
 - [Deployment Notes](https://github.com/devagya-rattan/DevOps-Internship-Assignment-Devagya-Rattan/blob/main/docs/deployment-notes.md)
 - [Design Decisions]([./docs/deployment-notes.md](https://github.com/devagya-rattan/DevOps-Internship-Assignment-Devagya-Rattan/blob/main/docs/design-decisions.md))
 
-These documents include:
-- architecture reasoning
-- networking decisions
-- RPC communication design
-- deployment challenges
-- debugging process
-- security considerations
-- production improvement ideas
-
 ## Architecture
 
 <img width="1401" height="688" alt="image" src="https://github.com/user-attachments/assets/4364d2bc-ccc3-4529-967a-bd4d6f156773" />
