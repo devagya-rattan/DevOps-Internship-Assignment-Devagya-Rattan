@@ -9,9 +9,23 @@ The deployment consists of:
 - Private TypeScript Caller Worker VM
 - Private Python Inference Worker VM
 
-Workers communicate internally over RPC using public bastion api IP addresses inside the VPC.
+Documentation
 
-Only the bastion API Gateway is publicly accessible.
+Detailed deployment notes, troubleshooting steps, and engineering reasoning are documented separately.
+
+### Documentation Links
+
+- [Deployment Notes](https://github.com/devagya-rattan/DevOps-Internship-Assignment-Devagya-Rattan/blob/main/docs/deployment-notes.md)
+- [Design Decisions]([./docs/deployment-notes.md](https://github.com/devagya-rattan/DevOps-Internship-Assignment-Devagya-Rattan/blob/main/docs/design-decisions.md))
+
+These documents include:
+- architecture reasoning
+- networking decisions
+- RPC communication design
+- deployment challenges
+- debugging process
+- security considerations
+- production improvement ideas
 
 ## Architecture
 
