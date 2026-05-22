@@ -1,7 +1,7 @@
 # Deployment Notes
 
 ## Networking
-
+I have used node PM2 process mamager to deploy workers in provate subnet and setup the iii engine in a public subnet with public IP, and then connect the wokers to this public ip by changing the connection url in code itself
 ### Public API Gateway
 
 - Public IP assigned
