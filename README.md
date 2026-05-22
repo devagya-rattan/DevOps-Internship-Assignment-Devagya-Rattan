@@ -22,8 +22,24 @@ Detailed deployment notes, troubleshooting steps, and engineering reasoning are 
 
 <img width="1401" height="688" alt="image" src="https://github.com/user-attachments/assets/4364d2bc-ccc3-4529-967a-bd4d6f156773" />
 
+## RPC Flow
+
+1. Client sends HTTP request to the public API Gateway
+2. API Gateway forwards request internally to the Caller Worker
+3. Caller Worker performs RPC communication with the Python Worker
+4. Python Worker processes inference request
+5. Response is returned as JSON to the client
 
 ## Infrastructure
+The deployment includes:
+- VPC
+- Public Subnet
+- Private Subnet
+- Internet Gateway
+- Route Tables
+- Security Groups / Firewall Rules
+- EC2 Instances
+  
 VPC
 
 <img width="958" height="713" alt="Screenshot from 2026-05-22 12-49-20" src="https://github.com/user-attachments/assets/22f25591-33df-4435-a1a5-065c2cc64dd2" />
@@ -36,7 +52,9 @@ Worker deployment in ec2 private subnet(logs)
 <img width="1538" height="385" alt="Screenshot from 2026-05-21 18-43-29" src="https://github.com/user-attachments/assets/d2b0ff5e-30d7-43ae-8912-8a66e9324f51" />
 <img width="1671" height="270" alt="Screenshot from 2026-05-21 19-00-56" src="https://github.com/user-attachments/assets/606e6abd-d32b-4002-b121-58fa8ee495d9" />
 ### Terraform apply output
-@@For terraform to apply you mus connect to your aws account via aws cli@@
+Terraform files:
+- terraform/main.tf
+@@For terraform to apply you must connect to your aws account via aws cli@@
 
 <img width="1337" height="538" alt="image" src="https://github.com/user-attachments/assets/bdaf9508-4fc2-490a-a2db-7bb7cc41e0bf" />
 
@@ -56,6 +74,7 @@ Curl output
   "running_total": 335
 }
 ```
+## [Deployment Instructions](https://github.com/devagya-rattan/DevOps-Internship-Assignment-Devagya-Rattan/blob/main/docs/deployment-notes.md)
 
 ### Components Used
 - VPC
